@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Profile picture" class="profile-img">
+      <div>
+        <strong>Johnmark Gregorio</strong><br>
+        <small>JUST DO IT</small>
+      </div>
+    </div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Small background about me.</h1>
+      <p>I'm a frontend developer and designer that builds new experiences for web and mobile. Below are selected works — click any image to preview.</p>
+      <a href="#projects">
+        <button>View projects</button></a>
+    </div>
+    <div>
+      <img src="images/code.png" alt="Hero image">
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Selected Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" onclick="openModal('images/mydesign.png')">
+        <img src="images/mydesign.png" alt="Project 1">
+        <div>
+          <h3>Project 1</h3>
+          <p>My Design 1.</p>
+        </div>
+      </div>
+      <div class="project-card" onclick="openModal('images/second_design',)">
+        <img src="images/second_design.png" alt="Project 2">
+        <div>
+          <h3>Project 2</h3>
+          <p>My Design 2.</p>
+        </div>
+      </div>
+      <div class="project-card" onclick="openModal('images/agile.jpg')">
+        <img src="images/agile.png" alt="Project 3">
+        <div>
+          <h3>Project 3</h3>
+          <p>My Design 3.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I'm a designer-developer who focuses on clean, accessible UI. I build responsive interfaces and polished micro-interactions. I enjoy working with modern frontend frameworks and design systems.</p>
+    <img src="images/code.png" alt="About image">
+  </section>
+
+  <footer>
+     Contact Number: 09914414561
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close-btn" onclick="closeModal()">Close</button>
+      </div>
+      <img id="modal-img" src="" alt="">
+      <div style="padding:1rem;">
+        <h3 id="modal-title"></h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
